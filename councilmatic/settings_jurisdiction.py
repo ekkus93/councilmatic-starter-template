@@ -4,23 +4,23 @@
 # These settings are required #
 ###############################
 
-OCD_JURISDICTION_ID = 'ocd-jurisdiction/country:us/state:il/place:chicago/government'
-OCD_CITY_COUNCIL_ID = 'ocd-organization/ef168607-9135-4177-ad8e-c1f7a4806c3a'
-CITY_COUNCIL_NAME = 'Chicago City Council'
-LEGISLATIVE_SESSIONS = ['2007', '2011', '2015'] # the last one in this list should be the current legislative session
-CITY_NAME = 'Chicago'
-CITY_NAME_SHORT = 'Chicago'
+OCD_JURISDICTION_ID = 'ocd-jurisdiction/country:us/state:ca/place:oakland/government'
+OCD_CITY_COUNCIL_ID = 'undef'
+CITY_COUNCIL_NAME = 'Oakland City Council'
+LEGISLATIVE_SESSIONS = ['2007', '2011', '2015', '2018'] # the last one in this list should be the current legislative session
+CITY_NAME = 'Oakland'
+CITY_NAME_SHORT = 'Oakland'
 
 # VOCAB SETTINGS FOR FRONT-END DISPLAY
 CITY_VOCAB = {
-    'MUNICIPAL_DISTRICT': 'Ward',       # e.g. 'District'
-    'SOURCE': 'Chicago City Clerk',
+    'MUNICIPAL_DISTRICT': 'Alameda',       # e.g. 'District'
+    'SOURCE': 'Oakland City Clerk',
     'COUNCIL_MEMBER': 'Alderman',       # e.g. 'Council Member'
     'COUNCIL_MEMBERS': 'Aldermen',      # e.g. 'Council Members'
     'EVENTS': 'Meetings',               # label for the events listing, e.g. 'Events'
 }
 
-APP_NAME = 'city'
+APP_NAME = 'oakland'
 
 
 #########################
@@ -37,7 +37,7 @@ SITE_META = {
     'twitter_creator': '',  # e.g. '@DataMadeCo'
 }
 
-LEGISTAR_URL = ''           # e.g. 'https://chicago.legistar.com/Legislation.aspx'
+LEGISTAR_URL = 'https://oakland.legistar.com/Legislation.aspx'           # e.g. 'https://chicago.legistar.com/Legislation.aspx'
 
 
 # this is for the boundaries of municipal districts, to add
@@ -50,7 +50,7 @@ BOUNDARY_SET = ''           # e.g. 'chicago-wards-2015'
 # this is for configuring a map of council districts using data from the posts
 # set MAP_CONFIG = None to hide map
 MAP_CONFIG = {
-    'center': [41.8369, -87.6847],
+    'center': [37.80532, -122.272544],
     'zoom': 10,
     'color': "#54afe8",
     'highlight_color': "#C00000",
